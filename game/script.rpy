@@ -68,8 +68,12 @@ label weapons_room:
                 "I ask for your leadership to better my skills of a warrior":
                     $ ruler += 1
                     ar "You cannot take power. It is owned by those who protect their people"
+                    ar "I look forward in seeing what you do"
                 "I seek out your knowledge one tactical strategies of a warrior":
                     $ soldier += 1
+                    ar "Move with the forest, not against it"
+                    ar "You would make your advantage a burden if you do"
+            ar "Go forth with what I share. I wish you luck dear warrior. No matter what fight you choose"
                     
             
         "Kannon":
