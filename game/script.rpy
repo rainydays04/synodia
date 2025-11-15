@@ -44,7 +44,7 @@ label weapons_room:
     hide Athena
     show bg weapons
     show artemis
-    ar "hello"
+    show kannon
     return
 label leadership:
     show bg stair
