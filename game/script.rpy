@@ -5,9 +5,11 @@
 
 define a = Character("Athena")
 define ar = Character("Artemis")
+define s = Character("Saraswati")
 image Athena = im.Scale("athena.png",1000,1000)
 image artemis = im.Scale("artemis.png",1000,1000)
 image kannon = im.Scale("kannon.png",1000,1000)
+image saraswati = im.Scale("saraswati.png",1000,1000)
 image bg stair = im.Scale("staircase.png",1920,1080)
 image bg weapons = im.Scale("weapons.png",1920,1080)
 
@@ -24,7 +26,6 @@ label start:
     narrator "But {w}what do you want to become?"
     narrator "Before you comeplete your though, a tall woman approaches you, (other important decriptors for athena)"
     show Athena
-    jump weapons_room
     a "What brings you here?"
     menu:
         "I come here to learn of the arts":
@@ -42,7 +43,6 @@ label start:
 label art_room:
     show bg stair
 label weapons_room:
-    hide Athena
     show bg weapons
     show artemis
     show kannon
