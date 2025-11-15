@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("Test")
+define e = Character("Test chnage prom")
 
 
 # The game starts here.
