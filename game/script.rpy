@@ -5,6 +5,7 @@
 
 define a = Character("Athena")
 image Athena = im.Scale("athena.png",1000,1000)
+image artemis = im.Scale("artemis.png",1000,1000)
 image bg stair = im.Scale("staircase.png",1920,1080)
 
 # The game starts here.
