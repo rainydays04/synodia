@@ -37,37 +37,37 @@ label start:
   
     show bg stair
 
-    narrator "After weeks of travel, you finally make it to the steps of the ancient temple"
+    narrator "After weeks of travel, you finally make it to the steps of the ancient temple."
     narrator "The temple that is said to have several vessels of knowledge for who you want to become"
-    narrator "But {w}what do you want to become?"
+    narrator "But... {w}what do you want to become?"
     narrator "Before you comeplete your though, a tall woman approaches you, (other important decriptors for athena)"
     show athena
     a "What brings you here?"
     menu:
         "I come here to learn of the arts":
-            a "The arts you say? I know a group of ladies who can assist you in that.Down the hall to the left and you will find the knowledge you seek"
+            a "The arts you say? I know a group of ladies who can assist you in that. Down the hall to the left and you will find the knowledge you seek."
             jump art_room
         "I come to learn the ways of a warrior":
-            a "A warrior is a noble job, but that means you need noble teachers. Down the hall to the right and you will find the knowledge you seek  "
+            a "A warrior is a noble job, but that means you need noble teachers. Down the hall to the right and you will find the knowledge you seek."
             jump weapons_room
         "To become a leader for the people":
-            a "A leader must know what its like to be led to have an idea of what people want. If you go straight down the hall you will find some of the best leaders"
+            a "A leader must know what its like to be led to have an idea of what people want. If you go straight down the hall you will find some of the best leaders."
             jump leadership
     return   
 
 label art_room:
     show bg weapons
-    a"help"
+
 label weapons_room:
     hide athena
-    narrator "You walk down the hall and you see a sign "
+    narrator "You walk down the hall and you see a sign."
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
     show bg weapons
     menu:
         "Artemis":
             narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
             show artemis
-            ar "You have travled quite far to this temple. The moon has led you to talk to me{w} tell me why"
+            ar "You have travled quite far to this temple. The moon has led you to talk to me...{w} tell me why"
             menu:
                 "I have come to hear your tales on being a warrior":
                     $ scholar += 1
