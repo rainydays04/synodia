@@ -7,10 +7,11 @@ define a = Character("Athena")
 define ar = Character("Artemis")
 image Athena = im.Scale("athena.png",1000,1000)
 image artemis = im.Scale("artemis.png",1000,1000)
+image kannon = im.Scale("kannon.png",1000,1000)
 image bg stair = im.Scale("staircase.png",1920,1080)
 image bg weapons = im.Scale("weapons.png",1920,1080)
 
-# The game starts here.
+
 
 label start:
 
