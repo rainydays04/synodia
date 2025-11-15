@@ -12,9 +12,6 @@ image bg stair = im.Scale("staircase.png",1920,1080)
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
   
     show bg stair
@@ -36,7 +33,7 @@ label start:
             a "A leader must know what its like to be led to have an idea of what people want. If you go straight down the hall you will find some of the best leaders"
             jump leadership
 
-    return
+    
 
 label art_room:
     show bg stair
