@@ -43,7 +43,17 @@ label art_room:
     show bg weapons
     a"help"
 label weapons_room:
+    hide Athena
+    narrator "You walk down the hall and you see a sign "
+    narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
     show bg weapons
-    narrator "you blah blah blah"
+    menu:
+        "Artemis":
+            narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
+        "Kannon":
+            narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
+        "Bellona":
+            narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
+
 label leadership:
     show bg weapons
