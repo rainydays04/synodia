@@ -25,6 +25,7 @@ label start:
     narrator "Before you comeplete your though, a tall woman approaches you, (other important decriptors for athena)"
     show Athena
     a "What brings you here?"
+    a "test"
     menu:
         "I come here to learn of the arts":
             a "The arts you say? I know a group of ladies who can assist you in that.Down the hall to the left and you will find the knowledge you seek"
