@@ -41,5 +41,6 @@ label art_room:
     show bg stair
 label weapons_room:
     show bg stair
+    show artemis
 label leadership:
     show bg stair
