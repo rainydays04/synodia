@@ -50,6 +50,9 @@ label weapons_room:
     menu:
         "Artemis":
             narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
+            show artemis
+            ar "You have travled quite far to this temple. The moon has led you to talk to me{w} tell me why"
+            
         "Kannon":
             narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
         "Bellona":
