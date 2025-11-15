@@ -63,12 +63,14 @@ label weapons_room:
                         "Any length of knowledge from you is appreciated":
                             ar "Then I'll leave you with this"
                             ar "A girl followed a deer into the dark and found herself braver than the path."
-                            ar "Remember this on your travles"
-                            
+                            ar "Remember this on your travels, young one"
+
                 "I ask for your leadership to better my skills of a warrior":
                     $ ruler += 1
+                    ar "You cannot take power. It is owned by those who protect their people"
                 "I seek out your knowledge one tactical strategies of a warrior":
                     $ soldier += 1
+                    
             
         "Kannon":
             narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
