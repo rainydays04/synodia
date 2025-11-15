@@ -4,6 +4,7 @@
 # name of the character.
 
 define a = Character("Athena")
+define ar = Character("Artemis")
 image Athena = im.Scale("athena.png",1000,1000)
 image artemis = im.Scale("artemis.png",1000,1000)
 image bg stair = im.Scale("staircase.png",1920,1080)
@@ -40,5 +41,7 @@ label art_room:
 label weapons_room:
     show bg stair
     show artemis
+    ar "hello"
+    return
 label leadership:
     show bg stair
