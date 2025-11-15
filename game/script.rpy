@@ -3,7 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("")
+define a = Character("Athena")
+image Athena = im.Scale("athena.png",1000,1000)
 
 
 # The game starts here.
@@ -15,18 +16,17 @@ label start:
     # images directory to show it.
 
     scene bg room
+    show Athena
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+
 
     # These display lines of dialogue.
 
-    e "yappity yap yap"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
