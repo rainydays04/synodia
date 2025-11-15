@@ -4,17 +4,30 @@
 # name of the character.
 
 define a = Character("Athena")
+define am = Character("Amaterasu")
 define ar = Character("Artemis")
+define b = Character("Bellona")
+define g = Character("Guanyin")
+define k = Character("Kannon")
+define m = Character("Ma'at")
+define mi = Character("Minerva")
 define s = Character("Saraswati")
-image Athena = im.Scale("athena.png",1000,1000)
+define se = Character("Seshat")
+image athena = im.Scale("athena.png",1000,1000)
+image amaterasu = im.Scale("amaterasu.png",1000,1000)
 image artemis = im.Scale("artemis.png",1000,1000)
+image bellona = im.Scale("bellona.png",1000,1000)
+image guanyin = im.Scale("guanyin.png",1000,1000)
 image kannon = im.Scale("kannon.png",1000,1000)
+image maat = im.Scale("ma'at.png",1000,1000)
+image minerva = im.Scale("minerva.png",1000,1000)
 image saraswati = im.Scale("saraswati.png",1000,1000)
+image seshat = im.Scale("seshat.png",1000,1000)
 image bg stair = im.Scale("staircase.png",1920,1080)
 image bg weapons = im.Scale("weapons.png",1920,1080)
 default scholar = 0
 default ruler = 0
-default soldier =0
+default soldier = 0
 
 
 
@@ -28,7 +41,7 @@ label start:
     narrator "The temple that is said to have several vessels of knowledge for who you want to become"
     narrator "But {w}what do you want to become?"
     narrator "Before you comeplete your though, a tall woman approaches you, (other important decriptors for athena)"
-    show Athena
+    show athena
     a "What brings you here?"
     menu:
         "I come here to learn of the arts":
@@ -46,7 +59,7 @@ label art_room:
     show bg weapons
     a"help"
 label weapons_room:
-    hide Athena
+    hide athena
     narrator "You walk down the hall and you see a sign "
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
     show bg weapons
