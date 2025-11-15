@@ -41,7 +41,7 @@ label art_room:
     show bg stair
 label weapons_room:
     hide Athena
-    show bg stair
+    show bg weapons
     show artemis
     ar "hello"
     return
