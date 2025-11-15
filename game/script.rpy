@@ -37,14 +37,13 @@ label start:
         "To become a leader for the people":
             a "A leader must know what its like to be led to have an idea of what people want. If you go straight down the hall you will find some of the best leaders"
             jump leadership
-
-    
+    return   
 
 label art_room:
-    show bg stair
+    show bg weapons
 label weapons_room:
     show bg weapons
     show artemis
     show kannon
 label leadership:
-    show bg stair
+    show bg weapons
