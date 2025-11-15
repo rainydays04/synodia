@@ -12,6 +12,9 @@ image kannon = im.Scale("kannon.png",1000,1000)
 image saraswati = im.Scale("saraswati.png",1000,1000)
 image bg stair = im.Scale("staircase.png",1920,1080)
 image bg weapons = im.Scale("weapons.png",1920,1080)
+default scholar = 0
+default ruler = 0
+default soldier =0
 
 
 
@@ -52,6 +55,20 @@ label weapons_room:
             narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
             show artemis
             ar "You have travled quite far to this temple. The moon has led you to talk to me{w} tell me why"
+            menu:
+                "I have come to hear your tales on being a warrior":
+                    $ scholar += 1
+                    ar "My tales? That is asking of much."
+                    menu:
+                        "Any length of knowledge from you is appreciated":
+                            ar "Then I'll leave you with this"
+                            ar "A girl followed a deer into the dark and found herself braver than the path."
+                            ar "Remember this on your travles"
+                            
+                "I ask for your leadership to better my skills of a warrior":
+                    $ ruler += 1
+                "I seek out your knowledge one tactical strategies of a warrior":
+                    $ soldier += 1
             
         "Kannon":
             narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
