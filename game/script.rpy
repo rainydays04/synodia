@@ -41,9 +41,9 @@ label start:
 
 label art_room:
     show bg weapons
+    a"help"
 label weapons_room:
     show bg weapons
-    show artemis
-    show kannon
+    narrator "you blah blah blah"
 label leadership:
     show bg weapons
