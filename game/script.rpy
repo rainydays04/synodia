@@ -24,6 +24,7 @@ label start:
     narrator "But {w}what do you want to become?"
     narrator "Before you comeplete your though, a tall woman approaches you, (other important decriptors for athena)"
     show Athena
+    jump weapons_room
     a "What brings you here?"
     menu:
         "I come here to learn of the arts":
