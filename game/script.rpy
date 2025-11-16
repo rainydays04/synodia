@@ -27,6 +27,7 @@ image bg stair = im.Scale("staircase.png",1920,1080)
 image bg artmuseum = im.Scale("artmuseum.png",1920,1080)
 image bg strategy = im.Scale("strategy.png",1920,1080)
 image bg weapons = im.Scale("weapons.png",1920,1080)
+image bg gardan = im.Scale("garden.png",1920,1080)
 default scholar = 0
 default ruler = 0
 default soldier = 0
@@ -314,6 +315,7 @@ label leadership:
         jump ending 
 
 label ending:
+    show bg gardan
     narrator "You exit the hall to the garden in the back, seeing Athena waiting in the center of it all"
     show Athena
     a "Did quite the questioning didn't you?"
