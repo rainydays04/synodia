@@ -140,6 +140,25 @@ label art_room:
                     ar "Pity to your soul."
                     ar "The palette cannot have as much color as the emotions of soldiers."
             ar "I expect my brush to have touched the canvas that is your mind."
+    if not warrior_path and not ruler_path:
+    menu:
+        "Where do you head of next?"
+        "I should learn skills for the battlefield":
+            jump weapons_room
+        "I'd like to explore how toi become a better leader":
+            jump leadership
+    elif not warrior_path and ruler_path :
+        menu:
+            "Where do you head of next?"
+            "I should learn skills for the battlefield":
+                jump weapons_room
+    elif warrior_path and not ruler_path:
+        menu:
+            "Where do you head of next?"
+            "I'd like to explore how toi become a better leader":
+                jump leadership
+    else:
+        jump ending 
 
 label weapons_room:
     hide athena
@@ -200,7 +219,26 @@ label weapons_room:
                 "When is war justified?":
                     b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
             b"Please depart with this knowledge and I look forward to wha you do"
-return
+    if not scholar_path and not ruler_path:
+    menu:
+        "Where do you head of next?"
+        "I wants to look more into the arts":
+            jump art_room
+        "I'd like to explore how toi become a better leader":
+            jump leadership
+    elif not scholar_path and ruler_path :
+        menu:
+            "Where do you head of next?"
+            "I wants to look more into the arts":
+                jump art_room
+    elif scholar_path and not ruler_path:
+        menu:
+            "Where do you head of next?"
+            "I'd like to explore how toi become a better leader":
+                jump leadership
+    else:
+        jump ending 
+
 
     
 
@@ -244,4 +282,34 @@ label leadership:
                     am "To rebuild everything you had, build with the future in mind. Not just the things but people too."
                 "I will fall in battle, how do I rise again?":
                     am "Do as the sun and bring yourself up slowly until you brighten everything that was once above you"
+    if not warrior_path and not scholar_path:
+    menu:
+        "Where do you head of next?"
+        "I wants to look more into the arts":
+            jump art_room
+        "I'd like to explore how toi become a better leader":
+            jump leadership
+    elif not warrior_path and ruler_path :
+        menu:
+            "Where do you head of next?"
+            "I should learn skills for the battlefield":
+                jump weapons_room
+    elif warrior_path and not ruler_path:
+        menu:
+            "Where do you head of next?"
+            "I wants to look more into the arts":
+                jump art_room
+    else:
+        jump ending 
 
+label ending:
+    narrator "You exit the hall to the garden in the back, seeing Athena waiting in the center of it all"
+    show Athena
+    a "Did quite the questioning didn't you?"
+    menu:
+        "Is that not what you asked me to do?":
+            narrator "She chuckled slightly"
+            a "Quite cocky now. I am glad you went through it as thoroughly as you did."
+        "Yes, I quite enjoyed it":
+            a "Glad you enoyed yourself. The goddesses also"
+return
