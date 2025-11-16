@@ -334,7 +334,7 @@ label ending:
     elif soldier>=2:
         a "Your blade is steady, and your purpose truer still. I name you Warrior."
         a "When you return home there is an army awaiting your command"
-    elif leader>=2:
+    elif ruler>=2:
         a "Your judgment is clear, your voice unwavering. I name you Leader"
         a "We gift you a kingdom in your name for your excellance of rule to be put to use"
     else:
