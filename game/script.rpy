@@ -64,7 +64,7 @@ label art_room:
     show bg artmuseum
     menu:
         "Saraswati":
-            narrator "You approach a lady with thick, wavy hair and a golden dress. You can hear a beautiful hum. Goddess of music."
+            narrator "You walk towards a graceful and serene women draped in gold and white. You can hear a beautiful hum coming from a face decorated with thick, wavy hair. Goddess of music."
             show saraswati
             ar "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
             menu:
@@ -89,17 +89,16 @@ label art_room:
                     
             
         "Seshat":
-            narrator "When you enter the room, you walk towards and elegant a poised woman, palm scroll in hand. Goddess of writing, measurement, and record-keeping."
-            narrator "You approach a lady with thick, wavy hair and a golden dress. You can hear a beautiful hum. Goddess of music."
+            narrator "When you enter the room, you walk towards and elegant a poised woman, palm scroll in hand. Goddess of writing and record-keeping."
             show seshat
-            ar "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
+            ar "I would like to hear the words I cannot see on paper."
             menu:
-                "I have come to hear your experience with music.":
+                "I have come to learn your story.":
                     $ scholar += 1
                     ar "Why do you ask of this?"
                     menu:
                         "I would love to hear your tale.":
-                            ar "Oh! I'd love for someone to listen to my story like a song."
+                            ar "My story is better told in writing than orally."
                             ar "I sang the notes that spoke to me, even when no one could hear."
                             ar "Take note of that."
 
