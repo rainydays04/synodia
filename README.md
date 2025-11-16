@@ -24,4 +24,4 @@ Synodia is a visual novel made using Ren'Py. It was made for the 36-hour hackath
 - All Athena Award qualifers, as well as some participants of partner programs like Girls Who Code or Kode with Klossy, receieve an invite to Parthenon. Parthenon is the largest gender-minority hackathon, reaching 200 female and non-binary participants.
 
 # Credits
-Credits are provided in the itch.io description.
+Credits for art are provided in the itch.io description.
