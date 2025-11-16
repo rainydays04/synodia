@@ -61,6 +61,7 @@ label start:
     return   
 
 label art_room:
+    $ scholar_path = True
     hide athena
     narrator "You walk down the hall and you see a sign."
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
@@ -69,77 +70,79 @@ label art_room:
         "Saraswati":
             narrator "You walk towards a graceful and serene women draped in gold and white. You can hear a beautiful hum coming from a face decorated with thick, wavy hair. Goddess of music."
             show saraswati
-            ar "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
+            s "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
             menu:
                 "I have come to hear your experience with music.":
                     $ scholar += 1
-                    ar "Why do you ask of this?"
+                    s "Why do you ask of this?"
                     menu:
                         "I would love to hear your tale.":
-                            ar "Oh! I'd love for someone to listen to my story like a song."
-                            ar "I sang the notes that spoke to me, even when no one could hear."
-                            ar "Take note of that."
+                            s "Oh! I'd love for someone to listen to my story like a song."
+                            s "I sang the notes that spoke to me, even when no one could hear."
+                            s "Take note of that."
 
                 "I ask for help in leading my band troop.":
                     $ ruler += 1
-                    ar "It is the song that strings people like a melody."
-                    ar "Even the most alluring tune cannot bring harmony without heart."
+                    s "It is the song that strings people like a melody."
+                    s "Even the most alluring tune cannot bring harmony without heart."
                 "I play the lyre for the armies. I seek out your advice.":
                     $ soldier += 1
-                    ar "Play your strings while they play with swords!"
-                    ar "You both must have pride in your job."
-            ar "I have given you a lyric. Now build your ballad. Remember my words like a chorus."
-                    
+                    s "Play your strings while they play with swords!"
+                    s "You both must have pride in your job."
+            s "I have given you a lyric. Now build your ballad. Remember my words like a chorus."
+            hide saraswati       
             
         "Seshat":
             narrator "When you enter the room, you walk towards and elegant a poised woman, palm scroll in hand. Goddess of writing and record-keeping."
             show seshat
-            ar "I would like to hear the words I cannot see on paper."
+            se "I would like to hear the words I cannot see on paper."
             menu:
                 "I have come to learn your story.":
                     $ scholar += 1
-                    ar "What inspires your question?"
+                    se "What inspires your question?"
                     menu:
                         "Your anecdote is appealing to my ears.":
-                            ar "My story is better told in writing than orally."
-                            ar "Seek my book in the museum. I trust you with its secrets."
+                            se "My story is better told in writing than orally."
+                            se "Seek my book in the museum. I trust you with its secrets."
 
                 "I would like to build a library.":
                     $ ruler += 1
-                    ar "Amazing. Your tale starts with the ones of others."
-                    ar "A keeper of history is a present to the future."
+                    se "Amazing. Your tale starts with the ones of others."
+                    se "A keeper of history is a present to the future."
 
                 "I hope to write stories about fallen warriors and friends.":
                     $ soldier += 1
-                    ar "Bless your narrative. Chronicles are crucial."
-                    ar "These accounts are necessary. You could write a novella!"
+                    se "Bless your narrative. Chronicles are crucial."
+                    se "These accounts are necessary. You could write a novella!"
 
-            ar "Choose your own story. The plot is yours."
+            se "Choose your own story. The plot is yours."
+            hide seshat
 
         "Minerva":
             narrator "The lady you appraoch is armoered with a regal posture and eyes sharp for aesthetics. Goddess of art."
             show minerva
-            ar "Paint me the picture of your business!"
+            mi "Paint me the picture of your business!"
             menu:
                 "I hope to visualize your story. Speak your story.":
                     $ scholar += 1
-                    ar "What a creative statement."
+                    mi "What a creative statement."
                     menu:
                         "I am drawn towards your story.":
-                            ar "And you draw my attention."
-                            ar "Look carefully at my work. Your analysis should take as equal work as my art."
-                            ar "My story is hidden behind every drop of paint."
+                            mi "And you draw my attention."
+                            mi "Look carefully at my work. Your analysis should take as equal work as my art."
+                            mi "My story is hidden behind every drop of paint."
 
                 "I will teach young ones to pursue an interest in the arts.":
                     $ ruler += 1
-                    ar "Lovely. The future will be brighter than the sun of my drawings."
-                    ar "The passion of children will stain you like ink."
+                    mi "Lovely. The future will be brighter than the sun of my drawings."
+                    mi "The passion of children will stain you like ink."
 
                 "I capture the horrors of war in my sketches.":
                     $ soldier += 1
-                    ar "Pity to your soul."
-                    ar "The palette cannot have as much color as the emotions of soldiers."
-            ar "I expect my brush to have touched the canvas that is your mind."
+                    mi "Pity to your soul."
+                    mi "The palette cannot have as much color as the emotions of soldiers."
+            mi "I expect my brush to have touched the canvas that is your mind."
+            hide minerva
     if not warrior_path and not ruler_path:
         menu:
             "Where do you head of next?"
@@ -161,6 +164,7 @@ label art_room:
         jump ending 
 
 label weapons_room:
+    $ warrior_path =True
     hide athena
     narrator "You walk down the hall and you see a sign "
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
@@ -189,7 +193,7 @@ label weapons_room:
                     ar "Move with the forest, not against it"
                     ar "You would make your advantage a burden if you do"
             ar "Go forth with what I share. I wish you luck dear warrior. No matter what fight you choose"
-                    
+            hide artemis      
             
         "Kannon":
             narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
@@ -207,6 +211,7 @@ label weapons_room:
                     $ leader +=1
                     k "The one who loses themselves to power cannot truly lead by name nor action. So rest assured, have the ability to be lost, there is not use in being found"
             k "I truly admire your willingness to learn, dear. I look forward to see how you use this knowledge"
+            hide kannon
         "Bellona":
             narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
             show bellona
@@ -219,6 +224,7 @@ label weapons_room:
                 "When is war justified?":
                     b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
             b"Please depart with this knowledge and I look forward to wha you do"
+            hide bellona
     if not scholar_path and not ruler_path:
         menu:
             "Where do you head of next?"
@@ -243,6 +249,7 @@ label weapons_room:
     
 
 label leadership:
+    $ ruler_path = True
     hide athena
     narrator "You walk down the hall and you see a sign "
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
@@ -260,10 +267,11 @@ label leadership:
                 "How do I know I am fighting for a just cause?":
                     m "Think with your heart before you do your blade. Thea heart is always truthful to the host while the blade only obeys"
             m "I send you off to turn these truths into actions"
+            hide maat
 
         "Guanyin":
             narrator "Wrapped in flowing white robes, Guanyn has soft features across her calm face.Goddess of mercy, compassion, and protection."
-            show Guanyin
+            show guanyin
             g "I have been informed tou seek understanding, dear one. Let me provide you with a clear view"
             menu:
                 "How can I turn the sorrow I experience into art to be shared":
@@ -272,8 +280,10 @@ label leadership:
                     g"Keep in mind what you are protecting, not what you are fighting against."
                 "In what ways can hope be given to those who have lost it?":
                     g "Be an example, exude hope and light even in the simpliest of ways. Hope grows silently in the darkness of dread"
+            hide guanyin
         "Amaterasu":
             narrator "Amaratsu has sunlit hair that glows as if under the dawn light, almost as warm as her eyes. Goddess of the sun, light, and renewal."
+            show amaterasu
             am "You shine bright my acolyte. What would you like to know to have people follow it"
             menu:
                 "Is there a way to capture warmth and light in my art?":
@@ -282,6 +292,7 @@ label leadership:
                     am "To rebuild everything you had, build with the future in mind. Not just the things but people too."
                 "I will fall in battle, how do I rise again?":
                     am "Do as the sun and bring yourself up slowly until you brighten everything that was once above you"
+            hide amaterasu
     if not warrior_path and not scholar_path:
         menu:
             "Where do you head of next?"
