@@ -324,7 +324,7 @@ label ending:
         "Yes, I quite enjoyed it":
             a "Glad you enoyed yourself. The goddesses also enjoyed your questioning"
     menu:
-        "I came for guide of what I shall become"
+        "I came for guide of what I shall become":
         a "ah indeed you have"
     if scholar>=2:
         a "By wisdom won and discipline proven, I name you Scholar. Stand tall in the light of knowledge."
