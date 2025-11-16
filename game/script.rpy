@@ -30,6 +30,9 @@ image bg weapons = im.Scale("weapons.png",1920,1080)
 default scholar = 0
 default ruler = 0
 default soldier = 0
+default scholar_path = False
+default warrior_path = False
+default ruler_path = False
 
 
 
