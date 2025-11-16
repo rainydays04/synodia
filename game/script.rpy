@@ -322,5 +322,20 @@ label ending:
             narrator "She chuckled slightly"
             a "Quite cocky now. I am glad you went through it as thoroughly as you did."
         "Yes, I quite enjoyed it":
-            a "Glad you enoyed yourself. The goddesses also"
+            a "Glad you enoyed yourself. The goddesses also enjoyed your questioning"
+    menu:
+        "I came for guide of what I shall become"
+        a "ah indeed you have"
+    if scholar>=2:
+        a "By wisdom won and discipline proven, I name you Scholar. Stand tall in the light of knowledge."
+        a "In your name there shall be a library built in your name with all the knowledge in every known language"
+    elif warrior>=2:
+        a "Your blade is steady, and your purpose truer still. I name you Warrior."
+        a "When you return home there is an army awaiting your command"
+    elif leader>=2:
+        a "Your judgment is clear, your voice unwavering. I name you Leader"
+        a "We gift you a kingdom in your name for your excellance of rule to be put to use"
+    else:
+        a "By valor, by intellect, by the fate written in your blood — rise, Demigod."
+        a "You may move between your home with mortals and reside amongts the gods"
 return
