@@ -331,7 +331,7 @@ label ending:
     if scholar>=2:
         a "By wisdom won and discipline proven, I name you Scholar. Stand tall in the light of knowledge."
         a "In your name there shall be a library built in your name with all the knowledge in every known language"
-    elif warrior>=2:
+    elif soldier>=2:
         a "Your blade is steady, and your purpose truer still. I name you Warrior."
         a "When you return home there is an army awaiting your command"
     elif leader>=2:
