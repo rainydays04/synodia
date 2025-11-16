@@ -226,7 +226,7 @@ label weapons_room:
                     $ leader += 1
                     b "Strength exist first and can exist alone, but power lies in having restraint."
                 "When is war justified?":
-                    $ soldiers += 1
+                    $ soldier += 1
                     b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict."
             b"Please depart with this knowledge and I look forward to wha you do."
             hide bellona
