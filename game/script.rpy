@@ -89,6 +89,7 @@ label art_room:
                     
             
         "Seshat":
+            narrator "When you enter the room, you walk towards and elegant a poised woman, palm scroll in hand. Goddess of writing, measurement, and record-keeping."
             narrator "You approach a lady with thick, wavy hair and a golden dress. You can hear a beautiful hum. Goddess of music."
             show seshat
             ar "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
@@ -113,7 +114,7 @@ label art_room:
             ar "I have given you a lyric. Now build your ballad. Remember my words like a chorus."
 
         "Minerva":
-            narrator "You approach a lady with thick, wavy hair and a golden dress. You can hear a beautiful hum. Goddess of music."
+            narrator "The lady you appraoch is armoered with a regalnposture and sharp eyes. "
             show minerva
             ar "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
             menu:
@@ -170,23 +171,34 @@ label weapons_room:
         "Kannon":
             narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
             show kannon
-                k "Hello dear acolyte. I hear you traveled far? Please take a seat."
-    k "You are in pursuit of knowledge, don't you? What would you like to ask?"
-    menu:
-        "When sharing the truth, is there beauty in softening it?":
-            $ scholar +=1
-            k"The beauty in sharing the truth is having the courage to share it"
-        "Will I ever save enough lives to makeup for the ones lost?":
-            $ soldier +=1
-            k "Lives, attained and lost, are not to tally. Having any impact on one is a blessing on this earth"
-        "How do I lead without losing myself to power?":
-            $ leader +=1
-            k "The one who loses themselves to power cannot truly lead by name nor action. So rest assured, have the ability to be lost, there is not use in being found"
-    k "I truly admire your willingness to learn, dear. I look forward to see how you use this knowledge"
-
+            k "Hello dear acolyte. I hear you traveled far? Please take a seat."
+            k "You are in pursuit of knowledge, don't you? What would you like to ask?"
+            menu:
+                "When sharing the truth, is there beauty in softening it?":
+                    $ scholar +=1
+                    k"The beauty in sharing the truth is having the courage to share it"
+                "Will I ever save enough lives to makeup for the ones lost?":
+                    $ soldier +=1
+                    k "Lives, attained and lost, are not to tally. Having any impact on one is a blessing on this earth"
+                "How do I lead without losing myself to power?":
+                    $ leader +=1
+                    k "The one who loses themselves to power cannot truly lead by name nor action. So rest assured, have the ability to be lost, there is not use in being found"
+            k "I truly admire your willingness to learn, dear. I look forward to see how you use this knowledge"
         "Bellona":
             narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
             show bellona
+            b "You are strong for traveling here in solitude and I respect that. So tell me, what do ask from me?"
+            menu:
+                "Why is it that conflict inspire creation?":
+                    b"Because it is what survives from it"
+                "Can strength exist without violence":
+                    b "Strength exist first and can exist alone, but power lies in having restraint"
+                "When is war justified?":
+                    b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
+            b"Please depart with this knowledge and I look forward to wha you do"
+return
+
+    
 
 label leadership:
     hide athena
