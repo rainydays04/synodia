@@ -121,24 +121,25 @@ label art_room:
             show minerva
             ar "Paint me the picture of your business!"
             menu:
-                "I have come to hear your experience with music.":
+                "I hope to visualize your story. Speak your story.":
                     $ scholar += 1
                     ar "What a creative statement."
                     menu:
-                        "I would love to hear your tale.":
-                            ar "You draw my attention."
-                            ar "I sang the notes that spoke to me, even when no one could hear."
-                            ar "Take note of that."
+                        "I am drawn towards your story.":
+                            ar "And you draw my attention."
+                            ar "Look carefully at my work. Your analysis should take as equal work as my art."
+                            ar "My story is hidden behind every drop of paint."
 
-                "I ask for help in leading my band troop.":
+                "I will teach young ones to pursue an interest in the arts.":
                     $ ruler += 1
-                    ar "It is the song that strings people like a melody."
-                    ar "Even the most alluring tune cannot bring harmony without heart."
-                "I play the lyre for the armies. I seek out your advice.":
+                    ar "Lovely. The future will be brighter than the sun of my drawings."
+                    ar "The passion of children will stain you like ink."
+
+                "I capture the horrors of war in my sketches.":
                     $ soldier += 1
-                    ar "Play your strings while they play with swords!"
-                    ar "You both must have pride in your job."
-            ar "I have given you a lyric. Now build your ballad. Remember my words like a chorus."
+                    ar "Pity to your soul."
+                    ar "The palette cannot have as much color as the emotions of soldiers."
+            ar "I expect my brush to have touched the canvas that is your mind."
 
 label weapons_room:
     hide athena
