@@ -111,7 +111,7 @@ label weapons_room:
         "Kannon":
             narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
             show kannon
-                k "Hello dear acolyte. I hear you traveled far? Please take a seat."
+            k "Hello dear acolyte. I hear you traveled far? Please take a seat."
     k "You are in pursuit of knowledge, don't you? What would you like to ask?"
     menu:
         "When sharing the truth, is there beauty in softening it?":
@@ -125,18 +125,18 @@ label weapons_room:
             k "The one who loses themselves to power cannot truly lead by name nor action. So rest assured, have the ability to be lost, there is not use in being found"
     k "I truly admire your willingness to learn, dear. I look forward to see how you use this knowledge"
 
-        "Bellona":
-            narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
-            show bellona
-            b "You are strong for traveling here in solitude and I respect that. So tell me, what do ask from me?"
-            menu:
-                "Why is it that conflict inspire creation?":
-                    b"Because it is what survives from it"
-                "Can strength exist without violence":
-                    b "Strength exist first and can exist alone, but power lies in having restraint"
-                "When is war justified?":
-                    b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
-            b"Please depart with this knowledge and I look forward to wha you do"
+    "Bellona":
+        narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
+        show bellona
+        b "You are strong for traveling here in solitude and I respect that. So tell me, what do ask from me?"
+        menu:
+            "Why is it that conflict inspire creation?":
+                b"Because it is what survives from it"
+            "Can strength exist without violence":
+                b "Strength exist first and can exist alone, but power lies in having restraint"
+            "When is war justified?":
+                b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
+        b"Please depart with this knowledge and I look forward to wha you do"
 
 label leadership:
     hide athena
