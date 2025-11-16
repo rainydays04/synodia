@@ -43,21 +43,21 @@ label start:
   
     show bg stair
 
-    narrator "After weeks of travel, you finally make it to the steps of the ancient temple"
-    narrator "The temple that is said to have several vessels of knowledge for who you want to become"
-    narrator "But {w}what do you want to become?"
-    narrator "Before you comeplete your though, a tall woman approaches you, (other important decriptors for athena)"
+    narrator "After weeks of travel, you finally make it to the steps of the ancient temple."
+    narrator "The temple that is said to have several vessels of knowledge for who you want to become."
+    narrator "But... {w}what do you want to become?"
+    narrator "Before you complete your thought, a tall woman with even taller gold wings approaches you. Her powerful aura was radiant through the air."
     show athena
     a "What brings you here?"
     menu:
-        "I come here to learn of the arts":
-            a "The arts you say? I know a group of ladies who can assist you in that.Down the hall to the left and you will find the knowledge you seek"
+        "I come here to learn of the arts.":
+            a "The arts you say? I know a group of ladies who can assist you in that. Down the hall to the left and you will find the knowledge you seek."
             jump art_room
-        "I come to learn the ways of a warrior":
-            a "A warrior is a noble job, but that means you need noble teachers. Down the hall to the right and you will find the knowledge you seek  "
+        "I come to learn the ways of a warrior.":
+            a "A warrior is a noble job, but that means you need noble teachers. Down the hall to the right and you will find the knowledge you seek."
             jump weapons_room
-        "To become a leader for the people":
-            a "A leader must know what its like to be led to have an idea of what people want. If you go straight down the hall you will find some of the best leaders"
+        "I come to become a leader for the people.":
+            a "A leader must know what its like to be led to have an idea of what people want. If you go straight down the hall you will find some of the best leaders."
             jump leadership
     return   
 
@@ -144,22 +144,23 @@ label art_room:
                     mi "The palette cannot have as much color as the emotions of soldiers."
             mi "I expect my brush to have touched the canvas that is your mind."
             hide minerva
+
     if not warrior_path and not ruler_path:
         menu:
             "Where do you head of next?"
-            "I should learn skills for the battlefield":
+            "I should learn skills for the battlefield.":
                 jump weapons_room
-            "I'd like to explore how toi become a better leader":
+            "I'd like to explore how toi become a better leader.":
                 jump leadership
-    elif not warrior_path and ruler_path :
+    elif not warrior_path and ruler_path:
         menu:
             "Where do you head of next?"
-            "I should learn skills for the battlefield":
+            "I should learn skills for the battlefield.":
                 jump weapons_room
     elif warrior_path and not ruler_path:
         menu:
             "Where do you head of next?"
-            "I'd like to explore how toi become a better leader":
+            "I'd like to explore how to become a better leader.":
                 jump leadership
     else:
         jump ending 
@@ -167,51 +168,51 @@ label art_room:
 label weapons_room:
     $ warrior_path =True
     hide athena
-    narrator "You walk down the hall and you see a sign "
+    narrator "You walk down the hall and you see a sign."
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
     show bg weapons
     menu:
         "Artemis":
             narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
             show artemis
-            ar "You have travled quite far to this temple. The moon has led you to talk to me{w} tell me why"
+            ar "You have travled quite far to this temple. The moon has led you to talk to me...{w} tell me why."
             menu:
-                "I have come to hear your tales on being a warrior":
+                "I have come to hear your tales on being a warrior.":
                     $ scholar += 1
                     ar "My tales? That is asking of much."
                     menu:
-                        "Any length of knowledge from you is appreciated":
-                            ar "Then I'll leave you with this"
+                        "Any length of knowledge from you is appreciated.":
+                            ar "Then I'll leave you with this."
                             ar "A girl followed a deer into the dark and found herself braver than the path."
                             ar "Remember this on your travels, young one"
 
-                "I ask for your leadership to better my skills of a warrior":
+                "I ask for your leadership to better my skills of a warrior.":
                     $ ruler += 1
-                    ar "You cannot take power. It is owned by those who protect their people"
-                    ar "I look forward in seeing what you do"
-                "I seek out your knowledge one tactical strategies of a warrior":
+                    ar "You cannot take power. It is owned by those who protect their people."
+                    ar "I look forward in seeing what you do."
+                "I seek out your knowledge one tactical strategies of a warrior.":
                     $ soldier += 1
-                    ar "Move with the forest, not against it"
-                    ar "You would make your advantage a burden if you do"
-            ar "Go forth with what I share. I wish you luck dear warrior. No matter what fight you choose"
+                    ar "Move with the forest, not against it."
+                    ar "You would make your advantage a burden if you do."
+            ar "Go forth with what I share. I wish you luck dear warrior. No matter what fight you choose."
             hide artemis      
             
         "Kannon":
-            narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
+            narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering."
             show kannon
             k "Hello dear acolyte. I hear you traveled far? Please take a seat."
             k "You are in pursuit of knowledge, don't you? What would you like to ask?"
             menu:
                 "When sharing the truth, is there beauty in softening it?":
                     $ scholar +=1
-                    k"The beauty in sharing the truth is having the courage to share it"
+                    k"The beauty in sharing the truth is having the courage to share it."
                 "Will I ever save enough lives to makeup for the ones lost?":
                     $ soldier +=1
-                    k "Lives, attained and lost, are not to tally. Having any impact on one is a blessing on this earth"
+                    k "Lives, attained and lost, are not to tally. Having any impact on one is a blessing on this earth."
                 "How do I lead without losing myself to power?":
                     $ leader +=1
-                    k "The one who loses themselves to power cannot truly lead by name nor action. So rest assured, have the ability to be lost, there is not use in being found"
-            k "I truly admire your willingness to learn, dear. I look forward to see how you use this knowledge"
+                    k "The one who loses themselves to power cannot truly lead by name nor action. So rest assured, have the ability to be lost, because there is not use in being found."
+            k "I truly admire your willingness to learn, dear. I look forward to see how you use this knowledge."
             hide kannon
         "Bellona":
             narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
@@ -219,12 +220,12 @@ label weapons_room:
             b "You are strong for traveling here in solitude and I respect that. So tell me, what do ask from me?"
             menu:
                 "Why is it that conflict inspire creation?":
-                    b"Because it is what survives from it"
-                "Can strength exist without violence":
-                    b "Strength exist first and can exist alone, but power lies in having restraint"
+                    b"Because it is what survives from it."
+                "Can strength exist without violence?":
+                    b "Strength exist first and can exist alone, but power lies in having restraint."
                 "When is war justified?":
-                    b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
-            b"Please depart with this knowledge and I look forward to wha you do"
+                    b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict."
+            b"Please depart with this knowledge and I look forward to wha you do."
             hide bellona
     if not scholar_path and not ruler_path:
         menu:
