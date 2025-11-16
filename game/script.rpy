@@ -266,10 +266,13 @@ label leadership:
             m "What is it you have come for? I will provide you with the knowledge of which exist as is?"
             menu:
                 "How do I write a legacy that lives on after me?":
+                    $ scholar += 1
                     m"The truth does not wear overtime, but instead it becomes more poignant."
                 "How do I become a fair judge for the people?":
+                    $ ruler+=1
                     m "Weight each as I do with the heart. Without favo nor fear"
                 "How do I know I am fighting for a just cause?":
+                    $ soldier+=1
                     m "Think with your heart before you do your blade. Thea heart is always truthful to the host while the blade only obeys"
             m "I send you off to turn these truths into actions"
             hide maat
@@ -280,10 +283,13 @@ label leadership:
             g "I have been informed tou seek understanding, dear one. Let me provide you with a clear view"
             menu:
                 "How can I turn the sorrow I experience into art to be shared":
+                    $ scholar += 1
                     g "Understand your sorrow first. If you do not understand it, then how can you share it to others?"
                 "When I fight, how do restrain myself from cruelty":
+                    $ ruler+=1
                     g"Keep in mind what you are protecting, not what you are fighting against."
                 "In what ways can hope be given to those who have lost it?":
+                    $ soldier+=1
                     g "Be an example, exude hope and light even in the simpliest of ways. Hope grows silently in the darkness of dread"
             hide guanyin
         "Amaterasu":
@@ -292,10 +298,13 @@ label leadership:
             am "You shine bright my acolyte. What would you like to know to have people follow it"
             menu:
                 "Is there a way to capture warmth and light in my art?":
+                    $ scholar += 1
                     am "Create what inspires you, write the truth so others can bask in the light of your work"
                 "Are there ways of which I can create new begginings for when everything around me falls?":
+                    $ ruler+=1
                     am "To rebuild everything you had, build with the future in mind. Not just the things but people too."
                 "I will fall in battle, how do I rise again?":
+                    $ soldier+=1
                     am "Do as the sun and bring yourself up slowly until you brighten everything that was once above you"
             hide amaterasu
     if not warrior_path and not scholar_path:
