@@ -317,7 +317,7 @@ label leadership:
 label ending:
     show bg gardan
     narrator "You exit the hall to the garden in the back, seeing Athena waiting in the center of it all"
-    show Athena
+    show athena
     a "Did quite the questioning didn't you?"
     menu:
         "Is that not what you asked me to do?":
