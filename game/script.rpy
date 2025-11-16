@@ -64,36 +64,17 @@ label art_room:
     show bg artmuseum
     menu:
         "Saraswati":
-            narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
+            narrator "You are set of and walk towards a graceful and serene woman draped in white. Goddess of knowledge, music, and wisdom."
             show saraswati
-            ar "You have travled quite far to this temple. The moon has led you to talk to me{w} tell me why"
-            menu:
-                "I have come to hear your tales on being a warrior":
-                    $ scholar += 1
-                    ar "My tales? That is asking of much."
-                    menu:
-                        "Any length of knowledge from you is appreciated":
-                            ar "Then I'll leave you with this"
-                            ar "A girl followed a deer into the dark and found herself braver than the path."
-                            ar "Remember this on your travels, young one"
-
-                "I ask for your leadership to better my skills of a warrior":
-                    $ ruler += 1
-                    ar "You cannot take power. It is owned by those who protect their people"
-                    ar "I look forward in seeing what you do"
-                "I seek out your knowledge one tactical strategies of a warrior":
-                    $ soldier += 1
-                    ar "Move with the forest, not against it"
-                    ar "You would make your advantage a burden if you do"
-            ar "Go forth with what I share. I wish you luck dear warrior. No matter what fight you choose"
                     
             
         "Seshat":
-            narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
+            narrator "When you enter the room, you walk towards and elegant a poised woman, palm scroll in hand. Goddess of writing, measurement, and record-keeping."
             show seshat
+            narrator ""
 
         "Minerva":
-            narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
+            narrator "The lady you appraoch is armoered with a regalnposture and sharp eyes. "
             show minerva
 
 label weapons_room:
