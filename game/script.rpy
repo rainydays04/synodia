@@ -325,7 +325,7 @@ label ending:
             a "Glad you enoyed yourself. The goddesses also enjoyed your questioning"
     menu:
         "I came for guide of what I shall become":
-        a "ah indeed you have"
+            a "ah indeed you have"
     if scholar>=2:
         a "By wisdom won and discipline proven, I name you Scholar. Stand tall in the light of knowledge."
         a "In your name there shall be a library built in your name with all the knowledge in every known language"
