@@ -136,6 +136,7 @@ label weapons_room:
                 "When is war justified?":
                     b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
             b"Please depart with this knowledge and I look forward to wha you do"
+return
 
     
 
