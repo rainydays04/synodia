@@ -4,6 +4,18 @@ Synodia is the Greek word for "company of travels" - but where will *you* travel
 # How to Play
 A mouse or trackpad is all that is needed - no keyboard necessary! Click anywhere on the screen to move to the next scene of dialogue.
 
+# List of Goddesses
+- Amaterasu (Shinto) - Goddess of wisdom and leadership
+- Artemis (Greek) - Goddess of hunt and moon
+- Athena (Greek) - Goddess of wisdom and war
+- Bellona (Roman) - Goddess of war
+- Guanyin (Tao) - Goddess of compassion, mercy, and kindness
+- Kannon (Buddhism) - Goddess of mercy
+- Ma'at (Egyptian) - Goddess of truth, justice, harmony, and balance
+- Minerva (Roman) - Goddess of wisdom
+- Saraswati (Hinduism) - Goddess of knowledge, arts, and music
+- Seshat (Egyptian) - Goddess of writing, knowledge, and measurement
+
 # About Development
 Synodia is a visual novel made using Ren'Py. It was made for the 36-hour hackathon Parthenon, the capstone project for Hack Club's Athena Award.
 - Hack Club is a non-profit organization inspriring teens to pursue computer and engineering hobbies Made by teens for teens, Hack Club features a variety of hackathons, game jams, workshops, online resources, and a safe community space for programmers.
