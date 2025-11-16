@@ -207,34 +207,37 @@ label leadership:
     show bg strategy
     menu:
         "Ma'at":
-            narrator "You approach a tall woman. Sharp-eyed with moon-pale skin and a hunter’s stance. Goddess of the hunt, wilderness, and the night sky."
+            narrator "The woman you approach is tall and composed with a single ostriuch feather in her hair. Goddess of truth, balance, and cosmic order."
             show maat
-            ar "You have travled quite far to this temple. The moon has led you to talk to me{w} tell me why"
+            m "What is it you have come for? I will provide you with the knowledge of which exist as is?"
             menu:
-                "I have come to hear your tales on being a warrior":
-                    $ scholar += 1
-                    ar "My tales? That is asking of much."
-                    menu:
-                        "Any length of knowledge from you is appreciated":
-                            ar "Then I'll leave you with this"
-                            ar "A girl followed a deer into the dark and found herself braver than the path."
-                            ar "Remember this on your travels, young one"
+                "How do I write a legacy that lives on after me":
+                    m"The truth does not wear overtime, but instead it becomes more poignant"
+                "How do I become a fair judge for the people?":
+                    m "Weight each as I do with the heart. Without favo nor fear"
+                "How do I know I am fighting for a just cause?"
+                    m "Think with your heart before you do your blade. Thea heart is always truthful to the host while the blade only obeys"
+            m "I send you off to turn these truths into actions"
 
-                "I ask for your leadership to better my skills of a warrior":
-                    $ ruler += 1
-                    ar "You cannot take power. It is owned by those who protect their people"
-                    ar "I look forward in seeing what you do"
-                "I seek out your knowledge one tactical strategies of a warrior":
-                    $ soldier += 1
-                    ar "Move with the forest, not against it"
-                    ar "You would make your advantage a burden if you do"
-            ar "Go forth with what I share. I wish you luck dear warrior. No matter what fight you choose"
-                    
-            
         "Guanyin":
-            narrator "The goddess you appraoch is gentle-faced, calm, often shown in flowing robes with a peaceful aura. Goddess of mercy, compassion, and listening to the suffering. "
-            show guanyin
-
+            narrator "Wrapped in flowing white robes, Guanyn has soft features across her calm face.Goddess of mercy, compassion, and protection."
+            show Guanyin
+            g "I have been informed tou seek understanding, dear one. Let me provide you with a clear view"
+            menu:
+                "How can I turn the sorrow I experience into art to be shared":
+                    g "Understand your sorrow first. If you do not understand it, then how can you share it to others?"
+                "When I fight, how do restrain myself from cruelty":
+                    g"Keep in mind what you are protecting, not what you are fighting against."
+                "In what ways can hope be given to those who have lost it?":
+                    g "Be an example, exude hope and light even in the simpliest of ways. Hope grows silently in the darkness of dread"
         "Amaterasu":
-            narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
-            show amaterasu
+            narrator "Amaratsu has sunlit hair that glows as if under the dawn light, almost as warm as her eyes. Goddess of the sun, light, and renewal."
+            am "You shine bright my acolyte. What would you like to know to have people follow it"
+            menu:
+                "Is there a way to capture warmth and light in my art?":
+                    am "Create what inspires you, write the truth so others can bask in the light of your work"
+                "Are there ways of which I can create new begginings for when everything around me falls?":
+                    am "To rebuild everything you had, build with the future in mind. Not just the things but people too."
+                "I will fall in battle, how do I rise again?":
+                    am "Do as the sun and bring yourself up slowly until you brighten everything that was once above you"
+
