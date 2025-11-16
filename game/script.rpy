@@ -147,6 +147,15 @@ label weapons_room:
         "Bellona":
             narrator "Bellona is armored with eyes like burning coals. Goddess of war, discipline, and strategic victory."
             show bellona
+            b "You are strong for traveling here in solitude and I respect that. So tell me, what do ask from me?"
+            menu:
+                "Why is it that conflict inspire creation?":
+                    b"Because it is what survives from it"
+                "Can strength exist without violence":
+                    b "Strength exist first and can exist alone, but power lies in having restraint"
+                "When is war justified?":
+                    b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict"
+            b"Please depart with this knowledge and I look forward to wha you do"
 
 label leadership:
     hide athena
