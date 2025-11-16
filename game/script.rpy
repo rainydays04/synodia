@@ -214,7 +214,7 @@ label leadership:
                     m"The truth does not wear overtime, but instead it becomes more poignant"
                 "How do I become a fair judge for the people?":
                     m "Weight each as I do with the heart. Without favo nor fear"
-                "How do I know I am fighting for a just cause?"
+                "How do I know I am fighting for a just cause?":
                     m "Think with your heart before you do your blade. Thea heart is always truthful to the host while the blade only obeys"
             m "I send you off to turn these truths into actions"
 
