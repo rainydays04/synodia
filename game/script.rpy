@@ -220,29 +220,32 @@ label weapons_room:
             b "You are strong for traveling here in solitude and I respect that. So tell me, what do ask from me?"
             menu:
                 "Why is it that conflict inspire creation?":
+                    $ scholar +=1
                     b"Because it is what survives from it."
                 "Can strength exist without violence?":
+                    $ leader += 1
                     b "Strength exist first and can exist alone, but power lies in having restraint."
                 "When is war justified?":
+                    $ soldiers += 1
                     b"It is justified when peace has been given every chance possible, not simple as an excuse to avoid conflict."
             b"Please depart with this knowledge and I look forward to wha you do."
             hide bellona
     if not scholar_path and not ruler_path:
         menu:
             "Where do you head of next?"
-            "I wants to look more into the arts":
+            "I wants to look more into the arts.":
                 jump art_room
-            "I'd like to explore how toi become a better leader":
+            "I'd like to explore how toi become a better leader.":
                 jump leadership
     elif not scholar_path and ruler_path :
         menu:
             "Where do you head of next?"
-            "I wants to look more into the arts":
+            "I wants to look more into the arts.":
                 jump art_room
     elif scholar_path and not ruler_path:
         menu:
             "Where do you head of next?"
-            "I'd like to explore how toi become a better leader":
+            "I'd like to explore how to become a better leader.":
                 jump leadership
     else:
         jump ending 
@@ -253,7 +256,7 @@ label weapons_room:
 label leadership:
     $ ruler_path = True
     hide athena
-    narrator "You walk down the hall and you see a sign "
+    narrator "You walk down the hall and you see a sign."
     narrator"{i}In this hall dwell three goddesses, but you may address only one.{i}"
     show bg strategy
     menu:
@@ -262,8 +265,8 @@ label leadership:
             show maat
             m "What is it you have come for? I will provide you with the knowledge of which exist as is?"
             menu:
-                "How do I write a legacy that lives on after me":
-                    m"The truth does not wear overtime, but instead it becomes more poignant"
+                "How do I write a legacy that lives on after me?":
+                    m"The truth does not wear overtime, but instead it becomes more poignant."
                 "How do I become a fair judge for the people?":
                     m "Weight each as I do with the heart. Without favo nor fear"
                 "How do I know I am fighting for a just cause?":
