@@ -98,34 +98,35 @@ label art_room:
             menu:
                 "I have come to learn your story.":
                     $ scholar += 1
-                    ar "Why do you ask of this?"
+                    ar "What inspires your question?"
                     menu:
-                        "I would love to hear your tale.":
+                        "Your anecdote is appealing to my ears.":
                             ar "My story is better told in writing than orally."
-                            ar "I sang the notes that spoke to me, even when no one could hear."
-                            ar "Take note of that."
+                            ar "Seek my book in the museum. I trust you with its secrets."
 
-                "I ask for help in leading my band troop.":
+                "I would like to build a library.":
                     $ ruler += 1
-                    ar "It is the song that strings people like a melody."
-                    ar "Even the most alluring tune cannot bring harmony without heart."
-                "I play the lyre for the armies. I seek out your advice.":
+                    ar "Amazing. Your tale starts with the ones of others."
+                    ar "A keeper of history is a present to the future."
+
+                "I hope to write stories about fallen warriors and friends.":
                     $ soldier += 1
-                    ar "Play your strings while they play with swords!"
-                    ar "You both must have pride in your job."
-            ar "I have given you a lyric. Now build your ballad. Remember my words like a chorus."
+                    ar "Bless your narrative. Chronicles are crucial."
+                    ar "These accounts are necessary. You could write a novella!"
+
+            ar "Choose your own story. The plot is yours."
 
         "Minerva":
-            narrator "The lady you appraoch is armoered with a regalnposture and sharp eyes. "
+            narrator "The lady you appraoch is armoered with a regal posture and eyes sharp for aesthetics. Goddess of art."
             show minerva
-            ar "I can hear the sound, but now I want to hear your voice! Tell me what you seek."
+            ar "Paint me the picture of your business!"
             menu:
                 "I have come to hear your experience with music.":
                     $ scholar += 1
-                    ar "Why do you ask of this?"
+                    ar "What a creative statement."
                     menu:
                         "I would love to hear your tale.":
-                            ar "Oh! I'd love for someone to listen to my story like a song."
+                            ar "You draw my attention."
                             ar "I sang the notes that spoke to me, even when no one could hear."
                             ar "Take note of that."
 
